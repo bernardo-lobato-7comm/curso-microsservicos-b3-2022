@@ -22,12 +22,21 @@ Como Cliente ou vendedor,  eu quero ser credenciado para ter​ acesso ao sistem
 ### Realizar Pedido
 Como Cliente, eu quero realizar uma compra para ter acesso a produtos de meu interesse​
 
-**Critérios de Aceite​*​*
+**Critérios de Aceite**
 
 * O cliente deve estar habilitado e validado​
 * Cada compra pode possuir um ou mais produtos de um mesmo vendedor​
 * Os produtos devem estar disponíveis e em quantidades adequadas ao pedido do usuário​
 * O pedido só pode ser finalizado uma vez que o pagamento seja AUTORIZADO​
+
+### Efetuar Pagamento
+Como Cliente,  eu quero realizar o pagamento de um pedido para dar continuidade ao processamento do mesmo​
+Critérios de Aceite
+
+* A Forma de pagamento deve ser aceita pelo vendedor
+* O pedido pode ser cancelado enquanto não for finalizado através da entrega
+
+
 
 
 
