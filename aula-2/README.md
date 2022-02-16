@@ -101,3 +101,8 @@ Como vendedor, eu quero poder ver todos os meus produtos listados
 * http://microservices.io/patterns/decomposition/decompose-by-business-capability.html​
 * http://wiki.c2.com/?GodClass​
 * https://plantuml.com//
+
+## Coleção Postman
+
+* https://www.getpostman.com/collections/a629978c2c9fd7bdae95
+* Environment: https://i.gyazo.com/f2a2c51d58b3313ff778bf0f972cc44a.png
