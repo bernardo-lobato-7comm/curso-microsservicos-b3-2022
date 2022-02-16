@@ -12,6 +12,25 @@ Como Cliente ou vendedor, eu quero manter um cadastro para que meus pedidos seja
 * A qualquer momento quaisquer dados meus podem​ ser alterados por mim através da interface correta,​ desde que, devidamente logado e autorizado.​
 
 
+### Credenciamento de Usuário
+Como Cliente ou vendedor,  eu quero ser credenciado para ter​ acesso ao sistema e suas funcionalidades de acordo com meu perfil​
+
+**Critérios de Aceite​**
+* Os campos para credenciamento são: login e senha​
+* Em caso de inatividade, minha sessão deve ser invalidada em 15 minutos​
+
+### Realizar Pedido
+Como Cliente, eu quero realizar uma compra para ter acesso a produtos de meu interesse​
+
+**Critérios de Aceite​*​*
+
+* O cliente deve estar habilitado e validado​
+* Cada compra pode possuir um ou mais produtos de um mesmo vendedor​
+* Os produtos devem estar disponíveis e em quantidades adequadas ao pedido do usuário​
+* O pedido só pode ser finalizado uma vez que o pagamento seja AUTORIZADO​
+
+
+
 ## Links
 
 * https://en.wikiquote.org/wiki/Software_architecture​
