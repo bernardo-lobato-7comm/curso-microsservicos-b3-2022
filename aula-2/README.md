@@ -31,13 +31,66 @@ Como Cliente, eu quero realizar uma compra para ter acesso a produtos de meu int
 
 ### Efetuar Pagamento
 Como Cliente,  eu quero realizar o pagamento de um pedido para dar continuidade ao processamento do mesmo​
-Critérios de Aceite
+
+**Critérios de Aceite**
 
 * A Forma de pagamento deve ser aceita pelo vendedor
 * O pedido pode ser cancelado enquanto não for finalizado através da entrega
 
+### Status Pedido
+Como cliente, eu quero poder ver meus pedidos e seus respectivos status
+
+**Critérios de Aceite**
+
+*Cliente deve estar logado no sistema
+*Só poderá aparecer pedidos do cliente logado
+
+### Alterar Produto
+Como vendedor, eu quero poder alterar o preço dos meus produtos
+
+**Critérios de Aceite**
+
+*Vendedor deve estar logado no sistema
+*Só poderá alterar o preço dos produtos do vendedor em questão
+
+### Cancelar Compra
+Como cliente, quero poder cancelar minha compra
+
+**Critérios de Aceite**
+
+*Cliente precisar estar logado
+*Cliente só pode cancelar as compras feitas por ele
+*Compras com status FINALIZADO não podem ser canceladas
+
+### Produtos Vendedor
+Como vendedor, eu quero poder ver todos os meus produtos listados
+
+**Critérios de Aceite**
+
+*Apenas produtos do vendedor aparecem na listagem
 
 
+## Operações do Sistema
+
+| Ator | História de Usuário | Comando | Descrição
+|----------------|------------------------|--------------------|--------|
+|Cliente|Manter Cliente|criaUsuario()|Cria um novo usuário
+|Cliente|Manter Cliente|alteraUsuario()|Altera os dados do usuário logado
+|Cliente|Credenciamento|login()|Credencia e autoriza o usuário para o acesso a suas funcionalidade
+|Cliente|Ver Pedidos|pedidosDoUsuario()|Lista os pedidos do usuário logado no sistema
+|Cliente|Cancelar Pedido|cancelarPedido()|Cliente cancela um pedido
+|Vendedor|Gestão de Produtos|alterarPrecoProduto()|Vendedor altera o preço do produto
+|Vendedor|Gestão de Produtos|listaProdutos()|Lista os produtos do vendedor logado no sistema
+|Vendedor|Gestão de Produtos|criaProduto()|Vendedor cria um produto novo
+|Vendedor|Gestão de Produtos|zeraProduto()|Zerando o estoque do produto e não pode mais ser vendido
+
+
+## Definindo as APIs
+|  Serviço  |  Operação | Colaboradores
+|-----------|---------------|----------
+|User Service| createUser();<br/>  updateUser();<br/> login();<br/> logout();<br/> validateUser(); | -
+|Order Service|createOrder()|ProductService.getProduct();<br/>ProductService.processProduct();<br/>UserService.validateUser();<br/>PaymentService.ReceivePayment();
+|Order Service| changeStatus();| ProductService.processProduct();
 
 
 ## Links
