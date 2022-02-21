@@ -26,3 +26,7 @@
 # Um Novo Serviço: Order Service Saga
 
 <img src=https://i.gyazo.com/b26b4343716d65a4bc952e7ac0fa04cf.png>
+
+<img src=https://i.gyazo.com/fc0acef4af5b39b0bc9bf950aefc0ff1.png>
+
+<img src=https://i.gyazo.com/eb1187f43aa2c163ef121d000685567c.png>
