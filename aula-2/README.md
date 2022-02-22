@@ -1,6 +1,6 @@
 # Curso de Padrões em microsserviços - Aula 2
 
-* Material da segnuda aula aula do curso de padrões em microsserviços.
+* Material da segunda aula do curso de padrões em microsserviços.
 
 ## Histórias de usuários
 ### Cadastro de Usuário
