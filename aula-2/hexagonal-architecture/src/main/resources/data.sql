@@ -1,0 +1,1 @@
+INSERT INTO product (price) VALUES (1000.00)
