@@ -1,33 +1,28 @@
 package com.example.hexagonalarchitecture.application.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Objects;
 
-@Entity
+
 public class Product implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+
+    private String id;
     private Double price;
 
     public Product() {
     }
 
-    public Product(Long id, Double price) {
+    public Product(String id, Double price) {
         this.id = id;
         this.price = price;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
