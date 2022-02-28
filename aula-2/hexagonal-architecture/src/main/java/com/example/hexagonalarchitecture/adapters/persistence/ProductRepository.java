@@ -18,7 +18,7 @@ public class ProductRepository implements LoadProductPort, SaveProductPort {
     }
 
     @Override
-    public Optional<Product> load(Long id) {
+    public Optional<Product> load(String id) {
         return repository.findById(id);
     }
 

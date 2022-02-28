@@ -18,7 +18,7 @@ public class ProductService implements UpdateProduct {
     }
 
     @Override
-    public void update(Long id, Double price) {
+    public void update(String id, Double price) {
         Product product = loadProductPort.load(id).orElseThrow(NoSuchElementException::new);
         product.setPrice(price);
         saveProductPort.save(product);
