@@ -1,0 +1,12 @@
+{
+  "namespace": "br.com.bernardolobato.curso.orderservice.orderservice.avro.events",
+  "type": "record",
+  "name": "DomainEvent",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "avro.java.string": "String"
+    }
+  ]
+}
