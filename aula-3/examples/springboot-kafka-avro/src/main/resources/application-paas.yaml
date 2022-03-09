@@ -1,0 +1,27 @@
+topic:
+  name: users
+  partitions-num: 3
+  replication-factor: 1
+spring:
+  kafka:
+    bootstrap-servers: "${vcap.services.cp.credentials.brokers}"
+    properties:
+      schema.registry.url: "${vcap.services.cp.credentials.sr}"
+      security.protocol: SASL_PLAINTEXT
+      sasl.mechanism: PLAIN
+      sasl.jaas.config: "${vcap.services.cp.credentials.jaasconfig}"
+      request.timeout.ms: 20000
+      retry.backoff.ms: 500
+    consumer:
+      group-id: group_id
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+    template:
+      default-topic:
+logging:
+  level:
+    root: info

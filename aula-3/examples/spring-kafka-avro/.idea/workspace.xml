@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bd6d287-f02b-45c9-b25b-fa418592057f" name="Default Changelist" comment="" />
+    <list default="true" id="bc5b9671-365f-4f2b-a0e8-5273f66c7b7c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +31,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProjectId" id="25F5TOIAX7z3L4jStUxvMOKFzUW" />
+  <component name="ProjectId" id="25TahkK7xNsOaRgDYqvSybvIe4L" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,23 +40,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../springboot-kafka-avro" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot-kafka-avro" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/avro" />
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="SpringKafkaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.microsservice.SpringKafkaApplication" />
-      <module name="microsservice" />
+    <configuration name="KafkaSpringAvroApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.bernardolobato.kafkaspringavro.KafkaSpringAvroApplication" />
+      <module name="kafka-spring-avro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.microsservice.*" />
+          <option name="PATTERN" value="br.com.bernardolobato.kafkaspringavro.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,18 +67,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SpringKafkaApplication" />
+        <item itemvalue="Application.KafkaSpringAvroApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9bd6d287-f02b-45c9-b25b-fa418592057f" name="Default Changelist" comment="" />
-      <created>1645110001232</created>
+      <changelist id="bc5b9671-365f-4f2b-a0e8-5273f66c7b7c" name="Default Changelist" comment="" />
+      <created>1645553654227</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1645110001232</updated>
+      <updated>1645553654227</updated>
     </task>
     <servers />
   </component>
