@@ -1,0 +1,12 @@
+{
+  "namespace": "com.br.userservice.avro.events",
+  "type": "record",
+  "name": "DomainEvent",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "avro.java.string": "String"
+    }
+  ]
+}
