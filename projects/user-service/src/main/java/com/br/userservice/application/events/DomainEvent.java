@@ -10,11 +10,11 @@ import java.util.UUID;
 public abstract class DomainEvent {
 
     @Getter
-    private final UUID id;
-    private final DateTime createdTime;
+    private String id;
+    private DateTime createdTime;
 
     public DomainEvent() {
-        this.id = UUID.randomUUID();
+        this.id = UUID.randomUUID().toString();
         this.createdTime = new DateTime();
     }
 }
