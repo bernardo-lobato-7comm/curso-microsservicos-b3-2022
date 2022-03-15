@@ -22,7 +22,7 @@ public class KafkaMessageProducer implements UserEventPublisher {
     @Override
     public void publish(List<DomainEvent> events) {
         events.forEach((event) -> {
-            this.kafkaTemplate.send(event.getClass().getSimpleName(), event.getId().toString(), event.toString());
+            this.kafkaTemplate.send(event.getClass().getSimpleName(), event.getId(), event.toString());
             log.info(String.format("Produced user -> %s", event));
         });
     }

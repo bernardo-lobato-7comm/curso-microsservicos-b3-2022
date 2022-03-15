@@ -4,13 +4,13 @@ import java.util.UUID;
 
 public class UserCreatedResponse {
 
-    private final UUID id;
+    private final String id;
 
-    public UserCreatedResponse(UUID id) {
+    public UserCreatedResponse(String id) {
         this.id = id;
     }
 
-    public UUID getId() {
+    public String getId() {
         return id;
     }
 }
