@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-zuul.iml" filepath="$PROJECT_DIR$/spring-cloud-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-zuul-foos-resource/spring-zuul-foos-resource.iml" filepath="$PROJECT_DIR$/spring-zuul-foos-resource/spring-zuul-foos-resource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-zuul-post-filter/spring-zuul-post-filter.iml" filepath="$PROJECT_DIR$/spring-zuul-post-filter/spring-zuul-post-filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-zuul-rate-limiting/spring-zuul-rate-limiting.iml" filepath="$PROJECT_DIR$/spring-zuul-rate-limiting/spring-zuul-rate-limiting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-zuul-ui/spring-zuul-ui.iml" filepath="$PROJECT_DIR$/spring-zuul-ui/spring-zuul-ui.iml" />
+    </modules>
+  </component>
+</project>

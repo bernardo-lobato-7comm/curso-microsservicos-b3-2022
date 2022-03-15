@@ -6,13 +6,13 @@ wordpress:
      - WORDPRESS_DB_PASSWORD=123456
      - WORDPRESS_DB_USER=root
     ports:
-     - "8082:80"
+     - "8089:80"
     volumes:
-     - ./html:/var/www/html
+     - ./html2:/var/www/html
 mariadb:
     image: mariadb
     environment:
      - MYSQL_ROOT_PASSWORD=123456
      - MYSQL_DATABASE=wordpress
     volumes:
-     - ./database:/var/lib/mysql
+     - ./database2:/var/lib/mysql
