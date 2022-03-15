@@ -1,11 +1,10 @@
 package com.br.paymentservice.application.events;
 
-import java.util.UUID;
 
-public class PaymentCreatedEvent extends DomainEvent{
-    private final UUID paymentId;
+public class PaymentCreatedEvent extends DomainEvent {
+    private final String paymentId;
 
-    public PaymentCreatedEvent(UUID paymentId) {
+    public PaymentCreatedEvent(String paymentId) {
         super();
         this.paymentId = paymentId;
     }
