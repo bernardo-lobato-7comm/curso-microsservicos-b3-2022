@@ -7,6 +7,7 @@ import com.br.userservice.infrastructure.adapters.web.dto.UserCreatedResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -22,18 +23,23 @@ public class UserController {
 
     @PostMapping
     UserCreatedResponse createUser(@RequestBody final UserCreatedRequest userCreatedRequest) {
-        UUID userId = userInbound.createUser(userCreatedRequest.getEmail());
+        String userId = userInbound.createUser(userCreatedRequest.getEmail());
         return new UserCreatedResponse(userId);
     }
 
     @GetMapping("/{id}")
-    User findById(@PathVariable final UUID id) {
+    User findById(@PathVariable final String id) {
         final User user = userInbound.findById(id).get();
         return user;
     }
 
+    @GetMapping
+    List<User> findAll(){
+        return userInbound.findAll();
+    }
+
     @DeleteMapping(value = "/{id}")
-    void deleteUser(@PathVariable final UUID id) {
+    void deleteUser(@PathVariable final String id) {
         userInbound.deleteUser(id);
     }
 }

@@ -1,4 +1,4 @@
-package com.br.userservice.application.events;
+package com.br.paymentservice.application.events;
 
 import lombok.Getter;
 import lombok.ToString;
@@ -8,13 +8,12 @@ import java.util.UUID;
 
 @ToString
 public abstract class DomainEvent {
-
     @Getter
-    private String id;
-    private DateTime createdTime;
+    private final UUID id;
+    private final DateTime createdTime;
 
     public DomainEvent() {
-        this.id = UUID.randomUUID().toString();
+        this.id = UUID.randomUUID();
         this.createdTime = new DateTime();
     }
 }
