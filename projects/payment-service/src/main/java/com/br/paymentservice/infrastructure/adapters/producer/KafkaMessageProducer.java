@@ -1,15 +1,14 @@
-package com.br.paymentservice.infrastructure.producer;
+package com.br.paymentservice.infrastructure.adapters.producer;
 
+import com.br.paymentservice.application.port.outbound.PaymentEventPublisher;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
-
 @Service
 @Slf4j
-public class KafkaMessageProducer {
+public class KafkaMessageProducer implements PaymentEventPublisher {
 
     private static KafkaTemplate<String, String> kafkaTemplate;
 
@@ -21,8 +20,10 @@ public class KafkaMessageProducer {
         KafkaMessageProducer.kafkaTemplate = kafkaTemplate;
     }
 
-    public static void publish(String message) throws IOException {
-        log.info("Pedido -> {}, Approved", message);
-        kafkaTemplate.send(paymentTopic, message);
+    @Override
+    public void publish(String event) {
+        String result = "Payment Approved from eventId -> " + event;
+        kafkaTemplate.send(paymentTopic, result);
+        log.info(String.format("Payment Approved from eventId -> %s", event));
     }
 }
