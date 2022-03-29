@@ -1,0 +1,2 @@
+META-INF/com.example/contract-rest-service/0.0.1-SNAPSHOT/mappings/hello/find_person_by_id.json
+META-INF/com.example/contract-rest-service/0.0.1-SNAPSHOT/contracts/hello/find_person_by_id.groovy

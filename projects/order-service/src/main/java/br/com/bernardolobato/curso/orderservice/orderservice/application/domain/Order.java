@@ -20,7 +20,10 @@ public class Order {
 
     public Order(final UUID id, final Product product) {
         this.id = id;
-        this.orderItems = Arrays.asList(new OrderItem(product));
+//        this.orderItems = Arrays.asList(new OrderItem(product));
+        List<OrderItem> items = new ArrayList<>();
+        items.add(new OrderItem(product));
+        this.orderItems = items;
         this.status = OrderStatus.CREATED;
         this.price = product.getPrice();
         this.events.add(new OrderCreatedEvent(this.id));

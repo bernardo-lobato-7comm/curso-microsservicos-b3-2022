@@ -63,7 +63,7 @@ services:
       - broker
       - schema-registry
     ports:
-      - "8083:8083"
+      - "9093:8083"
     environment:
       CONNECT_BOOTSTRAP_SERVERS: 'broker:29092'
       CONNECT_REST_ADVERTISED_HOST_NAME: connect
@@ -169,7 +169,7 @@ services:
       - broker
       - schema-registry
     ports:
-      - 8082:8082
+      - 8092:8082
     hostname: rest-proxy
     container_name: rest-proxy
     environment:

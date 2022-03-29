@@ -23,7 +23,7 @@ public class KafkaMessageProducer implements UserEventPublisher {
     public void publish(List<DomainEvent> events) {
         events.forEach((event) -> {
             this.kafkaTemplate.send(event.getClass().getSimpleName(), event.getId(), event.toString());
-            log.info(String.format("Produced user -> %s", event));
+            log.info(String.format("Publishing ValidatedUserEvent -> %s", event));
         });
     }
 }

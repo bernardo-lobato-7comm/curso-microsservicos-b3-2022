@@ -2,6 +2,7 @@ package com.br.userservice.application.domain;
 
 import com.br.userservice.application.events.DomainEvent;
 import com.br.userservice.application.events.UserCreatedEvent;
+import com.br.userservice.application.events.UserValidatedEvent;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
@@ -33,5 +34,10 @@ public class User implements Serializable {
 
     public void clearEvents() {
         this.events.clear();
+    }
+
+    public Boolean validateUser() {
+        this.events.add(new UserValidatedEvent(this.id, true));
+        return true;
     }
 }

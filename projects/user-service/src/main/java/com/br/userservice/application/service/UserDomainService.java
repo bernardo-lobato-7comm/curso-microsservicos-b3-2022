@@ -6,11 +6,13 @@ import com.br.userservice.application.exceptions.DomainException;
 import com.br.userservice.application.port.inbound.UserInbound;
 import com.br.userservice.application.port.outbound.UserEventPublisher;
 import com.br.userservice.application.port.outbound.UserRepository;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+@Slf4j
 public class UserDomainService implements UserInbound {
 
     private final UserRepository userRepository;
@@ -48,5 +50,19 @@ public class UserDomainService implements UserInbound {
     @Override
     public List<User> findAll() {
         return userRepository.findAll();
+    }
+
+
+    @Override
+    public void validateUser(UUID id) {
+        log.info("Validating user: {}", id);
+        //Optional<User> obj = findById(id.toString());
+        //User user = obj.orElseThrow(() -> new DomainException("Usuário não existe"));
+        User user = new User();
+        user.validateUser();
+        log.info("user {} validated", id);
+        userEventPublisher.publish(user.getEvents());
+        user.clearEvents();
+
     }
 }

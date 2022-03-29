@@ -6,7 +6,6 @@ import org.joda.time.DateTime;
 
 import java.util.UUID;
 
-@ToString
 public abstract class DomainEvent {
 
     @Getter

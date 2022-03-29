@@ -11,4 +11,5 @@ public interface UserInbound {
     void deleteUser(String id);
     Optional<User> findById(String id);
     List<User> findAll();
+    void validateUser(UUID id);
 }
