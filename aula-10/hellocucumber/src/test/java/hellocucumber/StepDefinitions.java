@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Assertions;
 
     class IsItFriday {
         static String isItFriday(String today) {
-            return "Nope";
+            return "No";
         }
     }
 
